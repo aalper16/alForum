@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alForum - login</title>
+    <link rel="stylesheet" href="../static/login.css">
+</head>
+<body>
+    <h1 class="title">alForum'a giriş yap</h1>
+    <form class="login" method="post" action="/login_backend">
+        <input name="username" required placeholder="KULLANICI ADI" autocomplete="off"><br><br>
+        <input type="password" name="password" required placeholder="ŞİFRE" autocomplete="off"><br><br>
+        <button type="submit">GİRİŞ YAP</button>
+        {{ get_flashed_messages() }}
+    </form>
+    <br>
+    <a href='/register'><button class="register">HESAP OLUŞTUR</button></a>
+    </div>
+</body>
+</html>

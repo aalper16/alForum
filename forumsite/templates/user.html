@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alForum:kullanıcı bilgisi</title>
+    <link rel="stylesheet" href="../static/user.css">
+</head>
+<body>
+    <div class="container">
+        {% for info in infos %}
+            <h1 class="username">KULLLANICI ADI: {{ info.username }}</h1><br><br>
+            <h1 class="id">ID: {{ info.user_id }}</h1><br><br>
+        {% endfor %}
+    </div>
+    <a href='/main'><button class="main">ANA SAYFA</button></a>
+</body>
+</html>

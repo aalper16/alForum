@@ -1,0 +1,105 @@
+body {
+    background-color: black;
+}
+
+
+.title {
+    font-family: Verdana;
+    font-size: 60px;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+    display: inline-block;
+}
+button{
+    font-family: Verdana;
+    font-size:30px;
+    background-color: black;
+    color:white;
+    border-color: yellow;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+button:hover{
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.9);
+}
+
+.forum {
+    height: max-content;
+    width: max-content;
+    font-size:25px;
+    font-family: Verdana;
+    border-radius: 10px;
+    min-width: 60px;
+}
+
+.forum a{
+    color:white;
+    text-decoration: none;
+}
+
+
+.forum_title {
+    color: yellow;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.forum_title:hover {
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.9);
+}
+
+.add_forum {
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    border-color: yellow;
+    transition: box-shadow 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.add_forum:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.9);
+}
+
+.sep_1 {
+    color: rgb(86, 86, 86); 
+    background-color: rgb(86, 86, 86);
+    border: none;
+    width: 95%;
+    height: 7px;
+    border-radius: 10px;
+}
+
+.select {
+    position: absolute;
+}
+.select select{
+    font-size: 20px;
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 2%;
+    background-color: black;
+    color: white;
+    border-color: yellow;
+    border-radius: 10px;
+}
+
+.select button{
+    margin-left: 620px;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px; /* scrollbar genişliği */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: yellow; /* scrollbar kaydırma çubuğu rengi */
+    border-radius: 6px; /* scrollbar kaydırma çubuğu kenar yarıçapı */
+}
+
+::-webkit-scrollbar-track {
+    background-color: black; /* scrollbar arka plan rengi */
+    border-radius: 6px; /* scrollbar arka plan kenar yarıçapı */
+}

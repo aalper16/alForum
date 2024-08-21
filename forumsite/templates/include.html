@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if forum_includee %}{{ forum_includee[0].forum_title }}{% endif %}</title>
+    <link rel="stylesheet" href="../static/include.css">
+</head>
+<body>
+    <a href="/main"><button class="main_page">ANA SAYFA</button></a><br><br><br>
+    {% for forum_includer in forum_includee %}
+        <fieldset class="forum">
+            <h1 class="forum_title">{{ forum_includer.forum_title }}</h1>
+            <br>
+            <h2 class="forum_include">{{ forum_includer.forum_include }}</h2>
+            <br>
+        </fieldset>
+        <br>
+    {% endfor %}
+    <div class="form">
+        <form class="reply" method="post" action="reply">
+            <br>
+            <input name="replier" placeholder="İSİM" required autocomplete="off">
+            <br><br>
+            <textarea name="reply" placeholder="CEVAP" required autocomplete="off"></textarea>
+            <br><br>
+            {% if forum_includee %}
+                <input type="hidden" name="forum_id" value="{{ forum_includee[0].forum_id }}">
+            {% endif %}
+            <button type="submit">CEVAPLA</button>
+            <br>
+        </form>
+    </div>
+    <br>
+
+    {% for replies in forum_replies %}
+        <fieldset class="replies">
+            <h1 class="replier">{{ replies.replier }}</h1>
+            <h2 class="reply_content">{{ replies.reply_include }}</h2>
+        </fieldset>
+        <br>
+    {% endfor %}
+
+</body>
+</html>

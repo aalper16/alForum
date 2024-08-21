@@ -1,0 +1,41 @@
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+}
+
+form {
+    text-align: center;
+}
+
+form button{
+    font-size: 30px;
+    border-radius: 10px;
+    border-color: yellow;
+    background-color: black;
+    color: white;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+form button:hover{
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.7);
+}
+
+form input{
+    font-size: 30px;
+    background-color: black;
+    color:white;
+    border-color: yellow;
+    border-radius: 10px;
+}
+
+.title{
+    font-family: Verdana;
+    color:white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
+    margin-top: -250px;
+    position: absolute;
+}

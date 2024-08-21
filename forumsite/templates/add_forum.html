@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add forum</title>
+    <link rel="stylesheet" href="../static/add_forum.css">
+</head>
+<body>
+    <a href="/main"><button>ANA SAYFA</button></a>
+    <form action="add_forum" method="post" class="add_forum">
+        <input name="forum_title" placeholder="BAŞLIK" required autocomplete="off"><br><br><br><br>
+        <textarea name="forum_include" placeholder="İÇERİK" required autocomplete="off"></textarea><br><br><br>
+        <select name="kategori" aria-placeholder="KATEGORİ" class="select" required>
+            <option value="/veribilimi">Veri Bilimi</option>
+            <option value="/donanim">Bilgisayar Donanımı</option>
+            <option value="/yazilim">Bilgisayar Yazılımı</option>
+            <option value="/etikhacking">Etik Hacking</option>
+            <option value="/android">Android</option>
+            <option value="/ios">iOS</option>
+            <option value="/linux">Linux</option>
+            <option value="/windows">Windows</option>
+        </select><br><br>
+        <button type="submit">OLUŞTUR</button>
+    </form>
+</body>
+</html>

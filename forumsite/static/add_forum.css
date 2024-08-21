@@ -1,0 +1,64 @@
+body{
+    text-align: center;
+    background-color: black;
+}
+
+button{
+    font-family: Verdana;
+    font-size:30px;
+    color: white;
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    background-color: black;
+    border-color: yellow;
+}
+
+.add_forum{
+    margin-top: 5%;
+    font-family: Verdana;
+}
+
+.add_forum input{
+    font-size:40px;
+    background-color: black;
+    color: white;
+    border-color: yellow;
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    height: 100px;
+    text-align: center;
+}
+
+.add_forum textarea{
+    font-size: 40px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    transition: box-shadow 0.3s ease-in-out;
+    border-color:yellow;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.add_forum button{
+    font-size: 40px;
+}
+
+.add_forum input:focus{
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.9);
+}
+.add_forum textarea:focus{
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.9);
+}
+
+button:hover{
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.9);
+}
+
+.select {
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border-color: yellow;
+}

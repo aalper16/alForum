@@ -1,0 +1,117 @@
+body{
+    font-family: Verdana;
+    background-color: black;
+}
+
+
+button{
+    font-family: Verdana;
+    font-size:30px;
+}   
+
+form {
+    font-family: Verdana;
+}
+
+form input{
+    font-size: 30px;
+    background-color: black;
+    border-color: yellow;
+    border-radius: 10px;
+    color: white;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+form input:focus {
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.9);
+}
+
+form textarea {
+    font-size: 35px;
+    height: 150px;
+    background-color: black;
+    border-color: yellow;
+    color: white;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+form textarea:focus {
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.9);
+}
+
+
+form button {
+    border-color:yellow;
+    background-color: black;
+    color:white;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+form button:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.7);
+}
+
+.form {
+    text-align: center;
+}
+
+.replies {
+    background-color: #303030;
+    color: white;
+    max-width: fit-content;
+    max-height: fit-content;
+}
+
+.replier {
+    color:yellow;
+    text-shadow: 0 0 10px rgba(255, 255, 0, 0.7);
+}
+
+.reply_content {
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.forum {
+    background: linear-gradient(to right, black, rgb(86, 86, 86), black);
+}
+
+.forum_title {
+    color: yellow;
+    text-shadow: 0 0 10px rgba(255,255,0, 0.7);
+}
+
+.forum_include {
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.main_page {
+    border-color: yellow;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+    margin-left: 85%;
+}
+
+.main_page:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 0, 0.7);
+}
+
+
+::-webkit-scrollbar {
+    width: 12px; /* scrollbar genişliği */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: yellow; /* scrollbar kaydırma çubuğu rengi */
+    border-radius: 6px; /* scrollbar kaydırma çubuğu kenar yarıçapı */
+}
+
+::-webkit-scrollbar-track {
+    background-color: black; /* scrollbar arka plan rengi */
+    border-radius: 6px; /* scrollbar arka plan kenar yarıçapı */
+}
